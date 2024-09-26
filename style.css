@@ -1,0 +1,489 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color:white; */
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    width: 100%;
+    /* background-color:white; */
+    background-color: black;
+   
+}
+
+li {
+    list-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+#nav-menu {
+    /* background-color:black; */
+    background-color:hwb(0 27% 72%);
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+#nav-cont {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamb {
+    display: none;
+     cursor: pointer;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+    border-radius: 2px;
+}
+
+#nav-name {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#nav-name>a {
+    color: white;
+}
+
+#navbar-menu {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#navbar-menu a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#navbar-menu li a:hover{
+    color: orange;
+   
+}
+/* #navbar-menu li a:before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    bottom: -2px;
+    height: 4px;
+    border-radius: 50px;
+    background: #f2840f;
+    transform: scaleX(0);
+    transition: transform 0.6s linear;
+
+
+} */
+/* 
+#navbar-menu  :hover a:before {
+    transform: scaleX(1);
+} */
+
+
+#resume-button-1 {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: transform .2s;
+}
+
+#resume-button-1:hover {
+    transform: scale(1.1);
+}
+
+#resume-link-1 {
+    color: white;
+}
+ 
+ 
+ 
+ 
+ 
+
+ /* ------------------------------ Navbar section end here------------------------ */
+/* ------------------------------ home section starts here------------------------ */
+#homesection{
+
+   padding:85PX;
+   justify-content: center;
+    width: 100%;
+    display: flex;
+   
+    align-items: center;
+}
+
+.leftsection{
+    margin: 0px 97px;
+    /* border: 2px solid green; */
+    width: 50%;
+}
+.leftsection>h1{
+    color: white;
+    
+}
+.rightsection{
+    width: 50%;
+    /* border: 2px solid yellow; */
+
+
+}
+.homeimage{
+    height: 84Px;
+    width: 85px;
+}
+
+
+
+
+
+.pc1{
+    /* mix-blend-mode: color-burn; */
+   width: 70%;
+}
+
+   #resume-button-2 {
+    background-color:orange;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: transform .2s;
+}
+
+#resume-button-2:hover {
+    transform: scale(1.1);
+}
+
+#resume-link-2 {
+    color: #ffffff;
+}
+
+.aboutsection{
+    font-weight: 1200;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin: 10px 0px;
+}
+ #aboutme{
+    display: flex;
+    padding: 10px 20px;
+    margin: 20px 210px;
+    border-radius: 10px;
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    font-weight: 900;
+    box-shadow: 10px 7px 20px orange;
+    justify-content: center;
+    align-items: center;
+}
+.skillsection{
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin:50px 0px;
+}
+#skillbody{display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50PX;
+    width: 100%;
+    margin: 0px 20px;
+}
+
+.skill-card{
+    border-radius: 10px;
+    box-shadow: 10px 7px 20px orange;
+    margin: 0px 50px;
+    font-weight: 900;
+    height: 100%;
+    width: 60%;
+    background-color: white;
+    font-size: 25px;
+    
+
+    
+}
+.skill-card:hover{ transform: scale(1.1);
+
+}
+.skills-card-name{
+    
+    margin: 0px 6px;
+    
+}
+#projects {
+    background-color: black;
+    color: white;
+    padding: 75px 0;
+}
+
+#projects>h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.projects-body {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 20px;
+}
+
+.project-card {
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-img {
+    width: 49%;
+    height: 300px;
+    background-color: black;
+    border-radius: 7px;
+    transition: transform .2s;
+}
+
+.project-img:hover {
+    transform: scale(1.02);
+}
+
+.project-img>img {
+    border: 3px solid black;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+}
+
+.project-info {
+    width: 49%;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+.project-info>h3 {
+    text-transform: uppercase;
+}
+
+.project-info>p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.project-tech-stack {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-tech-stack>div>img {
+    width: 100%;
+    height: 55px;
+}
+
+.project-buttons {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-buttons>a {
+    transition: transform .2s;
+}
+
+.project-buttons>a:hover {
+    transform: scale(1.1);
+}
+
+.project-github-link {
+    font-size: 45px;
+    color: black;
+}
+
+.project-deployed-link {
+    font-size: 45px;
+    color: black;
+}
+
+.project-deployed-link>button {
+    background-color: black;
+    border: none;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+/* #signature {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #111111;
+    color: white; */
+/* ----------------------------- Contact section starts here---------------------- */
+#contact {
+    background-color: black;
+    padding: 75px 0;
+    color: white;
+}
+
+#contact>h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-body {
+    width: 70%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-text {
+    background-color: white;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.contact-text>div {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.contact-text>div>* {
+    margin: 10px 0;
+    color: black;
+    transition: transform .2s;
+}
+
+.contact-text>div>*:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#contact-img {
+    width: 45%;
+}
+
+#contact-img>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contact-left form {
+    width: 90%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+    
+}
+
+form textarea {
+    height: 90px;
+}
+
+form .btn2 {
+    padding: 5px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: none;
+    background-color:orange;
+    color: white;
+    transition: transform .2s;
+    
+
+}
+
+form .btn2:hover {
+    transform: scale(1.1);
+}
+/* ----------------------------- Footer section starts here---------------------- */
+#signature {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #111111;
+    color:orange;
+    font-weight: 70;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px black;
+    background-color: black;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border: 3px solid black;
+}

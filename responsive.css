@@ -1,0 +1,197 @@
+----------------------------------- Responsiveness ----------------------------
+
+/*-------------------------------------For Large Screen------------------------------*/
+@media all and (min-width:1200px){
+    #navbar-menu{
+        display: flex;
+    }
+}
+/*-----------------------------------For Mid-Size Screen-----------------------------*/
+@media all and (min-width:701px) and (max-width:1200px){
+    #nav-cont{
+        width:90%;
+    }
+    #nav-name{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #navbar-menu{
+        width:50%;
+        font-size: 16px;
+        display: flex;
+    }
+    #homesection{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #aboutme{
+        display: block;
+        margin:75px auto;
+        text-align: center;
+    }
+    
+    .about-details{
+        width:100%;
+        margin:20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #skillbody{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:30px 0px; 
+    }
+
+    .project-card{width: 100%;
+        margin: auto;
+        /* padding: 50px 0; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px 20px;
+
+    }
+    .project-img>img {
+        border: 3px solid black;
+        border-radius: 7px;
+        width: 200%;
+        height: 100%;
+    }
+    .project-info {
+        width: 100%;
+        border: 3px solid black;
+        border-radius: 10px;
+        background-color: white;
+        padding: 5px;
+        color: black;
+        text-align: center;
+    }
+    .contact-body{
+        width:70%;
+        margin: 60px auto;
+        display: block;   
+    }
+    .contact-text{
+        width: 100%;
+        margin-top:15px; 
+    }
+    #contact-img{
+        width:100%;
+    } }
+    
+    /*-----------------------------------For smalll Screen-----------------------------*/
+    @media all and (min-width:300px) and (max-width:700px)
+    {
+        #hamb{
+            display: block;
+            font-size: 20px;
+            color:white;
+        }
+        #nav-cont{
+            width:82%;
+        }
+        
+        #navbar-menu{
+            border:none;
+            border-radius: 5px;
+            position: absolute;
+            left:0;
+            top:80%;
+            width:50%;
+            text-align: center;
+            display:none;
+            background-color: black;
+        }
+        #nav-name{
+            font-size: 17px;
+            font-weight: 500;
+        }
+        #navbar-menu li a:hover{
+    
+           color: white;
+        }
+        #navbar-menu>li{
+            border-bottom: white;
+            padding:15px 0;
+        }
+        #homesection{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .rightsection {
+            margin-left: 10px;
+            width: 100%;
+         
+        }
+        .leftsection {
+        font-size: 8px;
+            width: 100%;
+           
+        }
+        .aboutsection>h2 {
+            text-align: center;
+           
+
+        }
+        #aboutme {
+            display: flex;
+            padding: 18px 20px;
+            margin: 30px 40px;
+            border-radius: 10px;
+            height: 100%;
+            width: 80%;
+            background-color: white;
+            font-weight: 900;
+            box-shadow: 10px 7px 20px orange;
+            justify-content: center;
+            align-items: center;
+        }
+        #skillbody {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 48PX;
+            width: 100%;
+            margin: 0px 20px;
+        }
+        .project-card{
+            display: flex;
+            flex-direction: column;
+            padding:12px;
+        }
+        .project-img{
+            width:100%;
+        }
+        .project-info{
+            margin-top: 15px;
+            width:100%;
+        }
+        .project-tech-stack{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+        }
+        .project-buttons{
+            width:70%;
+        }
+
+       
+        .contact-body{
+            width:90%;
+            margin: 60px auto;
+            display: block;   
+        }
+        .contact-left form{
+            width: 98%;
+            margin: auto;
+        }
+        .contact-text{
+            width: 100%;
+            margin-top:15px; 
+        }
+        #contact-img{
+            width:100%;
+        } 
+    
+}
